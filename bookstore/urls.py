@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path('', include('store.urls')),
+    path('accounts/', include('registration.backends.default.urls')),
     path('admin/', admin.site.urls),
 ]
